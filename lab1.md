@@ -4,8 +4,9 @@ cd with no arguments:
 
 > cd
 
-
 cd with path to directory:
+
+> cd lecture1/messages
 
 cd with path to file:
 
