@@ -49,7 +49,7 @@ cat with path to directory:
 cat with path to file:
 > [user@sahara~]$ cat lecture1 lecture1/README
 > To use this program:
->
+
 > javac Hello.java
 > java Hello messages/en-us.txt
 
