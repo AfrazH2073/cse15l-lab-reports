@@ -53,4 +53,5 @@ cat with path to file:
 > javac Hello.java
 > java Hello messages/en-us.txt
 
-Cat is a command to conacatenate / print the contents of whatever files that are called. When using cat with no argument, there is no output produced since there is nothing to print. When using cat with a directory, a message pops up clarifying that the argument is a directory, showing clarification that you can't use cat and print out the folder since it contains other items that can be printed instead. Finally, using cat with actual files prints the actual contents of it, whether it's a txt or a class file, it prints out all the code/words that are included in the file's contents.
+**Cat is a command to conacatenate / print the contents of whatever files that are called. When using cat with no argument, there is no output produced since there is nothing to print. When using cat with a directory, a message pops up clarifying that the argument is a directory, showing clarification that you can't use cat and print out the folder since it contains other items that can be printed instead. Finally, using cat with actual files prints the actual contents of it, whether it's a txt or a class file, it prints out all the code/words that are included in the file's contents.
+**
