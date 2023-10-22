@@ -1,6 +1,26 @@
 Part 1: 
 
-For each of the two screenshots, describe:
+First SC Of Bot Working:
+
+![image](https://github.com/TTVTechTaro/cse15l-lab-reports/assets/46509287/69883145-fbee-49aa-98da-62d8c2c71abf)
+
+In this screenshot, handleRequest and main methods are called.
+
+Main takes in a String parameter that is labelled as args, which has the value of the port number. HandleRequest takes in a URI parameter called URL, taking in the URL of the path. add-message is the parameter searched for by the if statement, and in the URL itself, and the port number of 4000 that I used is in the beginning of the URL, as it was taken in earlier.
+
+From this specific request, words value is changed to "SC Works", count changes from 2 to 3, noPlus is set to "" (blank).
+
+Second SC of Bot Working:
+
+![image](https://github.com/TTVTechTaro/cse15l-lab-reports/assets/46509287/aa4dd1dc-7c60-4b7d-95f0-dab8685f15ea)
+
+In this screenshot, handleRequest and main methods are called.
+
+Main takes in a String parameter that is labelled as args, which has the value of the port number. HandleRequest takes in a URI parameter called URL, taking in the URL of the path. add-message is the parameter searched for by the if statement, and in the URL itself, and the port number of 4000 that I used is in the beginning of the URL, as it was taken in earlier.
+
+Count and strCount changes from 3 to 4, words becomes "SC+Works", and NoPlus becomes "SC Works".
+
+StringServer:
 
 ```
 
