@@ -2,7 +2,7 @@ Part 1:
 
 For each of the two screenshots, describe:
 
-'''
+```
 
 import java.io.IOException;
 import java.net.URI;
@@ -55,7 +55,7 @@ class StringServer {
     }
 }
 
-'''
+```
 
 Part 2:
 
