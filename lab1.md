@@ -12,6 +12,8 @@ cd with path to directory:
 The cd command was run to switch directories to /home/lecture1/messages, which worked, as shown by the second line resulting in [user@sahara ~]$ becoming [user@sahara ~/lecture1/messages]$. 
 cd with path to file. There weren't any results that printed but we can see that the working directory now changed.
 
+cd with path to file:
+
 ![image](https://github.com/TTVTechTaro/cse15l-lab-reports/assets/46509287/6ec1b6b9-72bb-4194-a7b1-68973208236e)
 
 
@@ -52,7 +54,6 @@ Using cat with a directory simply returns an error message clarifying that the p
 
 cat with path to file:
 ![image](https://github.com/TTVTechTaro/cse15l-lab-reports/assets/46509287/7826a169-78e6-40ce-b545-57f7ad01db22)
-
 
 Using cat with a file prints out the text/content of the actual file, since the intended parameter for the cat command is a file. No errors were made, as the content was printed successfully.
 
