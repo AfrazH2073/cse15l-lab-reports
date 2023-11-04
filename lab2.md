@@ -86,12 +86,13 @@ Path to private key:
 
 Path to public key:
 
-![image](https://github.com/TTVTechTaro/cse15l-lab-reports/assets/46509287/ca2136da-f8ae-4280-b450-85fa2b2ad292)
+<img width="571" alt="image" src="https://github.com/TTVTechTaro/cse15l-lab-reports/assets/46509287/b9c21e57-0ece-4ada-86db-0c6467db6fb5">
 
 
 Logging into ieng6 without password prompt:
 
-![image](https://github.com/TTVTechTaro/cse15l-lab-reports/assets/46509287/9a861a59-2d03-4657-bf9e-1277b33d6c94)
+<img width="353" alt="image" src="https://github.com/TTVTechTaro/cse15l-lab-reports/assets/46509287/89326458-e37d-4315-9049-9db1fc1901b9">
+
 
 
 Part 3:
