@@ -1,10 +1,18 @@
 Part 1: Bug
 
+Failure inducing input for program:
+
+Non-Failure inducing input:
+
+Symptom: Output of running the tests:
+
+The bug, before and after being fixed:
+
+Before:
 
 
 
-
-
+After:
 
 
 Part 2: Grep Analysis
