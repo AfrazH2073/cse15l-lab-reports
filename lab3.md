@@ -1,3 +1,5 @@
+Lab 3
+
 Part 1: Bug
 
 Failure inducing input for program: {5, 4, 3, 2, 1}
