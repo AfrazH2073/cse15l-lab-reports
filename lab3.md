@@ -1,19 +1,38 @@
 Part 1: Bug
 
-Failure inducing input for program:
+Failure inducing input for program: {5, 4, 3, 2, 1}
 
-Non-Failure inducing input:
+Non-Failure inducing input: {0}
 
 Symptom: Output of running the tests:
+
+![image](https://github.com/TTVTechTaro/cse15l-lab-reports/assets/46509287/cacb7100-1997-40bb-8b5e-d1a72b9d8cd3)
+
 
 The bug, before and after being fixed:
 
 Before:
 
-
+```
+  static int[] reversed(int[] arr) {
+    int[] newArray = new int[arr.length];
+    for(int i = 0; i < arr.length; i += 1) {
+      arr[i] = newArray[arr.length - i - 1];
+    }
+    return arr;
+```
 
 After:
 
+```
+  static int[] reversed(int[] arr) {
+    int[] newArray = new int[arr.length];
+    for(int i = 0; i < arr.length; i += 1) {
+      newArray[arr.length - i - 1] = arr[i]
+    }
+    return newArray; }
+
+```
 
 Part 2: Grep Analysis
 
