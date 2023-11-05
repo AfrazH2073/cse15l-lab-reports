@@ -5,7 +5,7 @@ Failure inducing input for program: {5, 4, 3, 2, 1}
 ![image](https://github.com/TTVTechTaro/cse15l-lab-reports/assets/46509287/e5bcf8b6-2714-42b0-a315-091f9295b610)
 
 
-Non-Failure inducing input: {0}
+Non-Failure inducing input: {0, 0}
 
 ![image](https://github.com/TTVTechTaro/cse15l-lab-reports/assets/46509287/71347dbb-74a3-4f11-80e0-078e58760343)
 
