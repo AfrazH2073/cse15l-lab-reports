@@ -60,11 +60,13 @@ After:
 
 ```
 
+The `reversed` method was not working because it set the given array to the values of `newArray` which had all values of zero- in the new code I instead assign the values of newArray equal to values of array, so the array would be reversed rather than having its values be deleted by being overwritten with zeros.
+
 Part 2: Grep Analysis
 
 `grep -v`
 
-I found the grep -v command from ChatGPT
+I found the grep -v command from chatgpt and asking chatgpt for alternate ways to use the grep command
 
 
 `Grep -v "age"`
@@ -779,7 +781,7 @@ Using grep -v is useful because you can filter out and exclude lines that match 
 
 `Grep - l`
 
-I found the grep -l command from ChatGPT
+I found the grep -l command from chatgpt and asking chatgpt for alternate ways to use the grep command
 
 `Grep -l "biology"`
 
@@ -905,7 +907,7 @@ You can also use ` grep -l ` with multiple files that you input as part of the c
 
 ` grep -c `
 
-I found the grep -c command from ChatGPT
+I found the grep -c command from chatgpt and asking chatgpt for alternate ways to use the grep command
 
 ` grep -c "age" `
 
@@ -937,7 +939,7 @@ Furthermore, grep-c can also be used with multiple files in one command prompt, 
 
 ` grep -i `
 
-I found the grep -i command from ChatGPT
+I found the grep -i command from chatgpt and asking chatgpt for alternate ways to use the grep command
 
 ` grep-i "the" `
 
