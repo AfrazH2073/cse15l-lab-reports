@@ -9,7 +9,7 @@ import static org.junit.Assert.*;
 import org.junit.*;
 
 public class ArrayTests {
-  @Test
+  @Test 
   public void testReverseInPlace() {
   input[] input1 = { 5, 4, 3, 2, 1 };
   assertArrayEquals(new int[]{ 1, 2, 3, 4, 5 }, input1);
@@ -22,6 +22,7 @@ public class ArrayTests {
   }
 
 }
+
 `
 
 Non-Failure inducing input: {0, 0}
@@ -61,7 +62,12 @@ After:
 
 Part 2: Grep Analysis
 
-Grep -v "age"
+`grep -v`
+
+I found the grep -v command from ChatGPT
+
+
+`Grep -v "age"`
 
 `
 ahameed@Afrazs-MacBook-Pro biomed % pwd
@@ -411,7 +417,7 @@ ahameed@Afrazs-MacBook-Pro biomed % grep -v "age" 1471-2431-3-6.txt
         manuscript.
 
 ```
-grep -v "infant"
+` grep -v "infant" `
 
 `
 ahameed@Afrazs-MacBook-Pro biomed % pwd
@@ -771,9 +777,11 @@ ahameed@Afrazs-MacBook-Pro biomed % grep -v "infant" 1471-2431-3-6.txt
 
 Using grep -v is useful because you can filter out and exclude lines that match certain content/patterns. You can use it to invert searches, remove lines that contain certain numerical values of data, information that might be void (like removing a header and data for it that is no longer valid), removing error messages, etc. However, grep-v does not accomadate for case sensitive text, or text that does not completely match the case of the inputted expression. 
 
-Grep - l
+`Grep - l`
 
-Grep -l "biology"
+I found the grep -l command from ChatGPT
+
+`Grep -l "biology"`
 
 `
 ahameed@Afrazs-MacBook-Pro biomed % pwd
@@ -876,7 +884,7 @@ rr167.txt
 
 ```
 
-grep -l "sports" 
+` grep -l "sports" `
 
 `
 ahameed@Afrazs-MacBook-Pro biomed % pwd
@@ -895,13 +903,15 @@ gb-2001-3-1-research0001.txt
 
 You can also use ` grep -l ` with multiple files that you input as part of the command, so `grep -l` with 3 or 4 files for example, and it will show which files out of those you inputted has an occurence of that term. In addition, you can use grep -l <expression> *.txt > variable to save the files that have that occurence in a variiable. 
 
-grep -c
+` grep -c `
+
+I found the grep -c command from ChatGPT
 
 ` grep -c "age" `
 
 `
 ahameed@Afrazs-MacBook-Pro biomed % pwd
-/Users/ahameed/docsearch-1/technical/biomed
+/Users/ahameed/docsearch-x1/technical/biomed
 ahameed@Afrazs-MacBook-Pro biomed % grep -c "birth" 1471-2431-3-6.txt
 -213X-3-4.txt 1471-213X-3-7.txt
 1471-2431-3-6.txt:67
@@ -926,6 +936,8 @@ Grep-c counts how many times a pattern/expression occurs in a file/files. The fi
 Furthermore, grep-c can also be used with multiple files in one command prompt, as specifying multiple files in the command parameters prints out the occurences of the pattern/expression inputted for each file. In our example, the word birth showed up 67 times in the 1471-2431-3-6.txt file, but it showed up zero times in the other 2 files we inputted. This can be extremely helpful for data processing and analytics, where we want to know how many times a certain variable holds true, where certain values could be, and obtain numericl, quantitative information about your files. You can also use grep -c <pattern> *txt to print out the number of occurences for all of the txt files in that directory.
 
 ` grep -i `
+
+I found the grep -i command from ChatGPT
 
 ` grep-i "the" `
 
@@ -1140,11 +1152,32 @@ The study of gene function has been greatly advanced
 ```
 ` grep -i "g418" `
 
+`
 ahameed@Afrazs-MacBook-Pro biomed % pwd
 /Users/ahameed/docsearch-1/technical/biomed
-ahameed@Afrazs-MacBook-Pro biomed % grep -i "g418" 1471-213X-1-10.txt
-        G418.
-        resistance to G418 in mammalian cells. Importantly, the reverting to G418 sensitivity while retaining the extremely efficient. The generation of these G418-sensitive loxP elements. No G418 resistant G418 [ 16]. The 5' region of homology consisted of 4.5 kb clones out of 200 that were resistant to both G418 and Hnf3αloxPNeo cells reverting to G418 and Hnf
+ahameed@Afrazs-MacBook-Pro biomed % grep -i "g418" 1471-213X-1-10.txt `
+
+`
+G418.
+        resistance to G418 in mammalian cells. Importantly, the 
+        reverting to G418 sensitivity while retaining the 
+        extremely efficient. The generation of these G418-sensitive
+        loxP elements. No G418 resistant
+        G418 [ 16]. The 5' region of homology consisted of 4.5 kb
+        clones out of 200 that were resistant to both G418 and
+        Hnf3αloxPNeo cells reverting to G418-sensitivity because
+        encode resistance to G418 confirming the results of Beck 
+        vector would remain sensitive to G418. In contrast, we
+        phosphotransferase and so confer resistance to G418. This
+        targeting vector into Hnf3αΔpgk-Neo ES cells, 100% of G418
+        collected that were resistant to G418. The genotype of the
+        lines that were resistant to G418 had undergone homologous
+        100% of G418 resistant ES cell colonies were correctly
+        to G418 and can be used to target transgenes to any genomic
+            resistance to G418 and whose expression in mammalian
+            encode resistance to G418 (data not shown) [ 16]. This
+            Geneticin (G418,Gibco-BRL) and negative selection
+            `
 
 grep -i performs similar function as grep by itself, except that doing grep -i allows you to do a search that isn't case sensitive. While normal grep would only print out the lines that have an occurence of the pattern you inputted exactly, same lower cases and same upper cases, even if the word has different cases compared to your input variable, it will still return. In our example, even though there were occurences of capital "The" while we inputted "the" for grep -i, and inputtted "g418" for "G418", the grep -i command returned all instances of the expression despite their differing cases.
 
