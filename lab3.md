@@ -66,24 +66,24 @@ After:
 ```
 
 The `reversed` method was not working because it set the given array to the values of `newArray` which had all values of zero- in the new code I instead assign the values of newArray equal to values of array, so the array would be reversed rather than having its values be deleted by being overwritten with zeros.
-<br />
+
 Part 2: Grep Analysis
-<br />
+
 `grep -v`
-<br />
+
 I found the grep -v command from chatgpt and asking chatgpt for alternate ways to use the grep command
 
-<br />
+
 `Grep -v "age"`
-<br />
+
 `
 ahameed@Afrazs-MacBook-Pro biomed % pwd
 /Users/ahameed/docsearch-1/technical/biomed
 ahameed@Afrazs-MacBook-Pro biomed % grep -v "age" 1471-2431-3-6.txt
 `
-<br />
+
 `Grep -v "age"` produces the following output below:
-<br />
+
 
 ```
  Background
@@ -423,19 +423,19 @@ ahameed@Afrazs-MacBook-Pro biomed % grep -v "age" 1471-2431-3-6.txt
         manuscript.
 
 ```
-<br />
+
 In the code above, ` grep -v "age" ` returns the files that do NOT contain the pattern that we inputted in  ` grep -l "age" `which in this case was "age" and returns all the files in the directory we enter that don't contain the "age" pattern we inputted.
-<br />
+
 ` grep -v "infant" `
-<br />
+
 `
 ahameed@Afrazs-MacBook-Pro biomed % pwd
 /Users/ahameed/docsearch-1/technical/biomed
 ahameed@Afrazs-MacBook-Pro biomed % grep -v "infant" 1471-2431-3-6.txt
 `
-<br />
+
 ` grep -v "infant" ` produces the following output below:
-<br />
+
 
 ```
         Background
@@ -784,23 +784,23 @@ ahameed@Afrazs-MacBook-Pro biomed % grep -v "infant" 1471-2431-3-6.txt
         manuscript. All authors read and approved the final
         manuscript.
 ```
-<br />
+
 In the code above, ` grep -v "infant" ` returns the files that do NOT contain the pattern that we inputted in  ` grep -l "infant" `which in this case was "infant" and returns all the lines in the file that do not contain the pattern.
-<br />
+
 `Grep - l`
-<br />
+
 I found the grep -l command from chatgpt and asking chatgpt for alternate ways to use the grep command
-<br />
+
 `Grep -l "biology"`
-<br />
+
 `
 ahameed@Afrazs-MacBook-Pro biomed % pwd
 /Users/ahameed/docsearch-1/technical/biomed
 ahameed@Afrazs-MacBook-Pro biomed % grep -l "biology" *.txt
 `
-<br />
+
 `Grep -l "biology"` produces the following output below:
-<br />
+
 ```
 1471-2105-1-1.txt
 1471-2105-3-12.txt
@@ -895,11 +895,11 @@ gb-2003-4-9-r60.txt
 rr167.txt
 
 ```
-<br />
+
 In the code above, ` grep -l "biology" ` returns the files that contain the pattern that we inputted in  ` grep -l "biology" `which in this case was "biology" and returns all the files in the directory we enter that contain the "biology" pattern we inputted.
-<br />
+
 ` grep -l "sports" `
-<br />
+
 `
 ahameed@Afrazs-MacBook-Pro biomed % pwd
 /Users/ahameed/docsearch-1/technical/biomed
@@ -911,59 +911,59 @@ ahameed@Afrazs-MacBook-Pro biomed % grep -l "sports" *txt
 cc1538.txt
 gb-2001-3-1-research0001.txt
 `
-<br />
+
 In the code above, ` grep -l "sports" ` returns the files that contain the pattern that we inputted in  ` grep -l "sports" `which in this case was "sports" and returns all the files in the directory we enter that contain the "sports" pattern we inputted.
 
-<br />
+
 ` grep -c `
-<br />
+
 I found the grep -c command from chatgpt and asking chatgpt for alternate ways to use the grep command
-<br />
+
 ` grep -c "age" `
-<br />
+
 `
 ahameed@Afrazs-MacBook-Pro biomed % pwd
 /Users/ahameed/docsearch-x1/technical/biomed
 ahameed@Afrazs-MacBook-Pro biomed % grep -c "birth" 1471-2431-3-6.txt `
-<br />
+
 ` grep -c "age" ` produces the following output below: `
-<br />
+
 `
 38
 `
-<br />
+
 In the code above, ` grep -c "age" ` returns the number of occurences that the pattern inputted in  ` grep -c "age" `appears in the file and prints it to the terminal, in this case being the pattern "age", and the program counts the amount of times that "age" appears in the inputted files and returns the occurence count in the file we entered.
-<br />
+
 ` grep -c "birth" ` with multiple files:
-<br />
+
 `
 ahameed@Afrazs-MacBook-Pro biomed % pwd
 /Users/ahameed/docsearch-1/technical/biomed
 ahameed@Afrazs-MacBook-Pro biomed % grep -c "birth" 1471-2431-3-6.txt 1471-213X-3-7.txt 1471-213X-3-4.txt 1471-213X-3-7.txt`
-<br />
+
 ` grep -c "birth" ` with multiple files produces the following output below:
-<br />
+
 `
 -213X-3-4.txt 1471-213X-3-7.txt
 1471-2431-3-6.txt:67
 1471-213X-3-4.txt:0 
 1471-213X-3-7.txt:0
 `
-<br />
+
 In the code above, ` grep -c "birth" ` returns the number of occurences that the pattern inputted in  ` grep -c "birth" `appears in the file/file(s) and prints it to the terminal, in this case being the pattern "birth", and the program counts the amount of times that "birth" appears in the inputted files and returns the occurence count in each one.
-<br />
+
 ` grep -i `
-<br />
+
 I found the grep -i command from chatgpt and asking chatgpt for alternate ways to use the grep command
-<br />
+
 ` grep-i "the" `
-<br />
+
 `
 ahameed@Afrazs-MacBook-Pro biomed %pwd
 /Users/ahameed/docsearch-1/technical/biomed
 ahameed@Afrazs-MacBook-Pro biomed % grep -i "the" 1471-213X-1-10.txt
 `
-<br />
+
 ```
 The study of gene function has been greatly advanced
         through the use of transgenic mice. Over-expression and
@@ -1167,16 +1167,16 @@ The study of gene function has been greatly advanced
             in utero by transferring them to
             a pseudopregnant surrogate mother. Embryos were stained
 ```
-<br />
+
 In the code above, ` grep -i "the" ` returns the lines that include the pattern that was inputted in ` grep -i "the" ` and prints it to the terminal, in this case being the pattern "the", and every line in the file that includes "the" is included there.
-<br />
+
 ` grep -i "g418" `
-<br />
+
 `
 ahameed@Afrazs-MacBook-Pro biomed % pwd
 /Users/ahameed/docsearch-1/technical/biomed
 ahameed@Afrazs-MacBook-Pro biomed % grep -i "g418" 1471-213X-1-10.txt `
-<br />
+
 The code below is the output resulted by performing ` grep -i "g418" `:
 `
 G418.
@@ -1199,6 +1199,6 @@ G418.
             encode resistance to G418 (data not shown) [ 16]. This
             Geneticin (G418,Gibco-BRL) and negative selection
             `
-<br />
+
 In the code above, ` grep -i "g418" ` returns the lines that include the pattern that was inputted in ` grep -i "g418" ` and prints it to the terminal, in this case being the pattern "G418", and every line in the file that includes "G418" is included there.
 
