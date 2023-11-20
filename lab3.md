@@ -1200,5 +1200,5 @@ G418.
             Geneticin (G418,Gibco-BRL) and negative selection
             `
 
-In the code above, ` grep -i "g418" ` returns the lines that include the pattern that was inputted in ` grep -i "g418" ` and prints it to the terminal, in this case being the pattern "G418", and every line in the file that includes "G418" is included there.
+In the code above,  grep -i "g418"  returns the lines that include the pattern that was inputted in  grep -i "g418"  and prints it to the terminal, in this case being the pattern "G418", and every line in the file that includes "G418" is included there.
 
