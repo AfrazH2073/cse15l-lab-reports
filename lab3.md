@@ -4,8 +4,25 @@ Part 1: Bug
 
 Failure inducing input for program: {5, 4, 3, 2, 1}
 
-![image](https://github.com/TTVTechTaro/cse15l-lab-reports/assets/46509287/e5bcf8b6-2714-42b0-a315-091f9295b610)
+`
+import static org.junit.Assert.*;
+import org.junit.*;
 
+public class ArrayTests {
+  @Test
+  public void testReverseInPlace() {
+  input[] input1 = { 5, 4, 3, 2, 1 };
+  assertArrayEquals(new int[]{ 1, 2, 3, 4, 5 }, input1);
+  }
+
+  @Test
+  public void testReversed() {
+  int[] input1 = { 5, 4, 3, 2, 1};
+  assertArrayEquals(new int[]{ 1, 2, 3, 4, 5}, ArrayExamples.reversed(input1));
+  }
+
+}
+`
 
 Non-Failure inducing input: {0, 0}
 
@@ -46,7 +63,13 @@ Part 2: Grep Analysis
 
 Grep -v "age"
 
-<img width="514" alt="image" src="https://github.com/TTVTechTaro/cse15l-lab-reports/assets/46509287/808ce8ab-0906-476c-972d-fb2a7352bc7f">
+`
+ahameed@Afrazs-MacBook-Pro biomed % pwd
+/Users/ahameed/docsearch-1/technical/biomed
+ahameed@Afrazs-MacBook-Pro biomed % grep -v "age" 1471-2431-3-6.txt
+`
+
+
 
 
 
@@ -390,7 +413,11 @@ Grep -v "age"
 ```
 grep -v "infant"
 
-<img width="524" alt="image" src="https://github.com/TTVTechTaro/cse15l-lab-reports/assets/46509287/86fa4f59-edb5-41d6-8134-ee002f92b137">
+`
+ahameed@Afrazs-MacBook-Pro biomed % pwd
+/Users/ahameed/docsearch-1/technical/biomed
+ahameed@Afrazs-MacBook-Pro biomed % grep -v "infant" 1471-2431-3-6.txt
+`
 
 
 
@@ -748,7 +775,11 @@ Grep - l
 
 Grep -l "biology"
 
-<img width="449" alt="image" src="https://github.com/TTVTechTaro/cse15l-lab-reports/assets/46509287/f1ce9b16-ac00-4996-9864-023ba165a67e">
+`
+ahameed@Afrazs-MacBook-Pro biomed % pwd
+/Users/ahameed/docsearch-1/technical/biomed
+ahameed@Afrazs-MacBook-Pro biomed % grep -l "biology" *.txt
+`
 
 ```
 1471-2105-1-1.txt
@@ -847,34 +878,62 @@ rr167.txt
 
 grep -l "sports" 
 
-<img width="459" alt="image" src="https://github.com/TTVTechTaro/cse15l-lab-reports/assets/46509287/3978435c-2553-4ee8-a314-8bd131b82d53">
+`
+ahameed@Afrazs-MacBook-Pro biomed % pwd
+/Users/ahameed/docsearch-1/technical/biomed
+ahameed@Afrazs-MacBook-Pro biomed % grep -l "sports" *txt
+1471-2288-2-4.txt
+1472-6882-3-1.txt
+1476-511X-2-3.txt
+1477-7525-10.txt
+cc1538.txt
+gb-2001-3-1-research0001.txt
+`
 
 
-Grep -l looks through an assortment of files, in a directory or just a collection of files, and filters out files that contain the pattern that you search for. To depict this, I did grep -l with a term that is very similar to the directory's subject since the directory is called biomed, it is more likely that the term biology appears more often in the text files that are contained. However, when I did grep-l "sports" for the same directory, only 5 files showed up, since sports is a term that wouldn't be seen as much in the files since it's not related to biomed directly, therefore grep -l only returned a few files since only a few files contained the pattern I inputted.
+` Grep -l ` looks through an assortment of files, in a directory or just a collection of files, and filters out files that contain the pattern that you search for. To depict this, I did grep -l with a term that is very similar to the directory's subject since the directory is called biomed, it is more likely that the term biology appears more often in the text files that are contained. However, when I did ` grep-l "sports" ` for the same directory, only 5 files showed up, since sports is a term that wouldn't be seen as much in the files since it's not related to biomed directly, therefore grep -l only returned a few files since only a few files contained the pattern I inputted.
 
-You can also use grep -l with multiple files that you input as part of the command, so grep -l with 3 or 4 files for example, and it will show which files out of those you inputted has an occurence of that term. In addition, you can use grep -l <expression> *.txt > variable to save the files that have that occurence in a variiable. 
-
+You can also use ` grep -l ` with multiple files that you input as part of the command, so `grep -l` with 3 or 4 files for example, and it will show which files out of those you inputted has an occurence of that term. In addition, you can use grep -l <expression> *.txt > variable to save the files that have that occurence in a variiable. 
 
 grep -c
 
-grep -c "age"
+` grep -c "age" `
 
-<img width="507" alt="image" src="https://github.com/TTVTechTaro/cse15l-lab-reports/assets/46509287/49a5ff70-9f32-4ff5-bcb8-9254e59e68f3">
+`
+ahameed@Afrazs-MacBook-Pro biomed % pwd
+/Users/ahameed/docsearch-1/technical/biomed
+ahameed@Afrazs-MacBook-Pro biomed % grep -c "birth" 1471-2431-3-6.txt
+-213X-3-4.txt 1471-213X-3-7.txt
+1471-2431-3-6.txt:67
+1471-213X-3-4.txt:0
+1471-213X-3-7.txt:0
+`
 
-grep -c "birth" with multiple files:
+` grep -c "birth" ` with multiple files:
 
-<img width="551" alt="image" src="https://github.com/TTVTechTaro/cse15l-lab-reports/assets/46509287/e0d69245-0936-4290-8338-19b6b774bf53">
+`
+ahameed@Afrazs-MacBook-Pro biomed % pwd
+/Users/ahameed/docsearch-1/technical/biomed
+ahameed@Afrazs-MacBook-Pro biomed % grep -c "birth" 1471-2431-3-6.txt
+-213X-3-4.txt 1471-213X-3-7.txt
+1471-2431-3-6.txt:67
+1471-213X-3-4.txt:0 
+1471-213X-3-7.txt:0
+`
 
 Grep-c counts how many times a pattern/expression occurs in a file/files. The first example we give shows using grep-c to find occurences of the word "age" in the file we specified, and in that example "age" showed up 38 times. If we control Find on the output in a Google Doc, it should give us 38 occurences of the word "age". 
 
 Furthermore, grep-c can also be used with multiple files in one command prompt, as specifying multiple files in the command parameters prints out the occurences of the pattern/expression inputted for each file. In our example, the word birth showed up 67 times in the 1471-2431-3-6.txt file, but it showed up zero times in the other 2 files we inputted. This can be extremely helpful for data processing and analytics, where we want to know how many times a certain variable holds true, where certain values could be, and obtain numericl, quantitative information about your files. You can also use grep -c <pattern> *txt to print out the number of occurences for all of the txt files in that directory.
 
-grep -i 
+` grep -i `
 
-grep-i "the"
+` grep-i "the" `
 
-<img width="513" alt="image" src="https://github.com/TTVTechTaro/cse15l-lab-reports/assets/46509287/cb305e38-9c52-47f8-933d-66200e2d27b2">
-
+`
+ahameed@Afrazs-MacBook-Pro biomed %pwd
+/Users/ahameed/docsearch-1/technical/biomed
+ahameed@Afrazs-MacBook-Pro biomed % grep -i "the" 1471-213X-1-10.txt
+`
 
 ```
 The study of gene function has been greatly advanced
@@ -1079,9 +1138,13 @@ The study of gene function has been greatly advanced
             in utero by transferring them to
             a pseudopregnant surrogate mother. Embryos were stained
 ```
-grep -i "g418"
+` grep -i "g418" `
 
-<img width="532" alt="image" src="https://github.com/TTVTechTaro/cse15l-lab-reports/assets/46509287/4c62efa8-1c47-4f31-8924-9cbb31c917de">
+ahameed@Afrazs-MacBook-Pro biomed % pwd
+/Users/ahameed/docsearch-1/technical/biomed
+ahameed@Afrazs-MacBook-Pro biomed % grep -i "g418" 1471-213X-1-10.txt
+        G418.
+        resistance to G418 in mammalian cells. Importantly, the reverting to G418 sensitivity while retaining the extremely efficient. The generation of these G418-sensitive loxP elements. No G418 resistant G418 [ 16]. The 5' region of homology consisted of 4.5 kb clones out of 200 that were resistant to both G418 and Hnf3αloxPNeo cells reverting to G418 and Hnf
 
 grep -i performs similar function as grep by itself, except that doing grep -i allows you to do a search that isn't case sensitive. While normal grep would only print out the lines that have an occurence of the pattern you inputted exactly, same lower cases and same upper cases, even if the word has different cases compared to your input variable, it will still return. In our example, even though there were occurences of capital "The" while we inputted "the" for grep -i, and inputtted "g418" for "G418", the grep -i command returned all instances of the expression despite their differing cases.
 
