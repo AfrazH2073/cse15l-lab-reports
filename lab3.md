@@ -433,6 +433,7 @@ ahameed@Afrazs-MacBook-Pro biomed % pwd
 /Users/ahameed/docsearch-1/technical/biomed
 ahameed@Afrazs-MacBook-Pro biomed % grep -v "infant" 1471-2431-3-6.txt
 `
+
 ` grep -v "infant" ` produces the following output below:
 
 
