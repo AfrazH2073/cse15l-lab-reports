@@ -27,8 +27,13 @@ public class ArrayTests {
 
 Non-Failure inducing input: {0, 0}
 
-![image](https://github.com/TTVTechTaro/cse15l-lab-reports/assets/46509287/71347dbb-74a3-4f11-80e0-078e58760343)
-
+`
+@Test
+public void testReversed() {
+  int[] input1 = {0, 0 };
+  assertArrayEquals(new int[] { 0, 0}, ArrayExamples.reversed(input1);
+  }
+`
 
 Symptom: Output of running the tests:
 
@@ -77,8 +82,7 @@ ahameed@Afrazs-MacBook-Pro biomed % pwd
 ahameed@Afrazs-MacBook-Pro biomed % grep -v "age" 1471-2431-3-6.txt
 `
 
-
-
+`Grep -v "age"` produces the following output below:
 
 
 ```
@@ -419,6 +423,9 @@ ahameed@Afrazs-MacBook-Pro biomed % grep -v "age" 1471-2431-3-6.txt
         manuscript.
 
 ```
+
+In the code above, ` grep -v "age" ` returns the files that do NOT contain the pattern that we inputted in  ` grep -l "age" `which in this case was "age" and returns all the files in the directory we enter that don't contain the "age" pattern we inputted.
+
 ` grep -v "infant" `
 
 `
@@ -426,7 +433,7 @@ ahameed@Afrazs-MacBook-Pro biomed % pwd
 /Users/ahameed/docsearch-1/technical/biomed
 ahameed@Afrazs-MacBook-Pro biomed % grep -v "infant" 1471-2431-3-6.txt
 `
-
+` grep -v "infant" ` produces the following output below:
 
 
 ```
@@ -777,7 +784,7 @@ ahameed@Afrazs-MacBook-Pro biomed % grep -v "infant" 1471-2431-3-6.txt
         manuscript.
 ```
 
-Using grep -v is useful because you can filter out and exclude lines that match certain content/patterns. You can use it to invert searches, remove lines that contain certain numerical values of data, information that might be void (like removing a header and data for it that is no longer valid), removing error messages, etc. However, grep-v does not accomadate for case sensitive text, or text that does not completely match the case of the inputted expression. 
+In the code above, ` grep -v "infant" ` returns the files that do NOT contain the pattern that we inputted in  ` grep -l "infant" `which in this case was "infant" and returns all the lines in the file that do not contain the pattern.
 
 `Grep - l`
 
@@ -790,6 +797,8 @@ ahameed@Afrazs-MacBook-Pro biomed % pwd
 /Users/ahameed/docsearch-1/technical/biomed
 ahameed@Afrazs-MacBook-Pro biomed % grep -l "biology" *.txt
 `
+
+`Grep -l "biology"` produces the following output below:
 
 ```
 1471-2105-1-1.txt
@@ -886,6 +895,8 @@ rr167.txt
 
 ```
 
+In the code above, ` grep -l "biology" ` returns the files that contain the pattern that we inputted in  ` grep -l "biology" `which in this case was "biology" and returns all the files in the directory we enter that contain the "biology" pattern we inputted.
+
 ` grep -l "sports" `
 
 `
@@ -900,10 +911,8 @@ cc1538.txt
 gb-2001-3-1-research0001.txt
 `
 
+In the code above, ` grep -l "sports" ` returns the files that contain the pattern that we inputted in  ` grep -l "sports" `which in this case was "sports" and returns all the files in the directory we enter that contain the "sports" pattern we inputted.
 
-` Grep -l ` looks through an assortment of files, in a directory or just a collection of files, and filters out files that contain the pattern that you search for. To depict this, I did grep -l with a term that is very similar to the directory's subject since the directory is called biomed, it is more likely that the term biology appears more often in the text files that are contained. However, when I did ` grep-l "sports" ` for the same directory, only 5 files showed up, since sports is a term that wouldn't be seen as much in the files since it's not related to biomed directly, therefore grep -l only returned a few files since only a few files contained the pattern I inputted.
-
-You can also use ` grep -l ` with multiple files that you input as part of the command, so `grep -l` with 3 or 4 files for example, and it will show which files out of those you inputted has an occurence of that term. In addition, you can use grep -l <expression> *.txt > variable to save the files that have that occurence in a variiable. 
 
 ` grep -c `
 
@@ -914,28 +923,32 @@ I found the grep -c command from chatgpt and asking chatgpt for alternate ways t
 `
 ahameed@Afrazs-MacBook-Pro biomed % pwd
 /Users/ahameed/docsearch-x1/technical/biomed
-ahameed@Afrazs-MacBook-Pro biomed % grep -c "birth" 1471-2431-3-6.txt
--213X-3-4.txt 1471-213X-3-7.txt
-1471-2431-3-6.txt:67
-1471-213X-3-4.txt:0
-1471-213X-3-7.txt:0
+ahameed@Afrazs-MacBook-Pro biomed % grep -c "birth" 1471-2431-3-6.txt `
+
+` grep -c "age" ` produces the following output below: `
+
 `
+38
+`
+In the code above, ` grep -c "age" ` returns the number of occurences that the pattern inputted in  ` grep -c "age" `appears in the file and prints it to the terminal, in this case being the pattern "age", and the program counts the amount of times that "age" appears in the inputted files and returns the occurence count in the file we entered.
 
 ` grep -c "birth" ` with multiple files:
 
 `
 ahameed@Afrazs-MacBook-Pro biomed % pwd
 /Users/ahameed/docsearch-1/technical/biomed
-ahameed@Afrazs-MacBook-Pro biomed % grep -c "birth" 1471-2431-3-6.txt
+ahameed@Afrazs-MacBook-Pro biomed % grep -c "birth" 1471-2431-3-6.txt 1471-213X-3-7.txt 1471-213X-3-4.txt 1471-213X-3-7.txt`
+
+` grep -c "birth" ` with multiple files produces the following output below:
+
+`
 -213X-3-4.txt 1471-213X-3-7.txt
 1471-2431-3-6.txt:67
 1471-213X-3-4.txt:0 
 1471-213X-3-7.txt:0
 `
 
-Grep-c counts how many times a pattern/expression occurs in a file/files. The first example we give shows using grep-c to find occurences of the word "age" in the file we specified, and in that example "age" showed up 38 times. If we control Find on the output in a Google Doc, it should give us 38 occurences of the word "age". 
-
-Furthermore, grep-c can also be used with multiple files in one command prompt, as specifying multiple files in the command parameters prints out the occurences of the pattern/expression inputted for each file. In our example, the word birth showed up 67 times in the 1471-2431-3-6.txt file, but it showed up zero times in the other 2 files we inputted. This can be extremely helpful for data processing and analytics, where we want to know how many times a certain variable holds true, where certain values could be, and obtain numericl, quantitative information about your files. You can also use grep -c <pattern> *txt to print out the number of occurences for all of the txt files in that directory.
+In the code above, ` grep -c "birth" ` returns the number of occurences that the pattern inputted in  ` grep -c "birth" `appears in the file/file(s) and prints it to the terminal, in this case being the pattern "birth", and the program counts the amount of times that "birth" appears in the inputted files and returns the occurence count in each one.
 
 ` grep -i `
 
@@ -1152,6 +1165,9 @@ The study of gene function has been greatly advanced
             in utero by transferring them to
             a pseudopregnant surrogate mother. Embryos were stained
 ```
+
+In the code above, ` grep -i "the" ` returns the lines that include the pattern that was inputted in ` grep -i "the" ` and prints it to the terminal, in this case being the pattern "the", and every line in the file that includes "the" is included there.
+
 ` grep -i "g418" `
 
 `
@@ -1181,5 +1197,5 @@ G418.
             Geneticin (G418,Gibco-BRL) and negative selection
             `
 
-grep -i performs similar function as grep by itself, except that doing grep -i allows you to do a search that isn't case sensitive. While normal grep would only print out the lines that have an occurence of the pattern you inputted exactly, same lower cases and same upper cases, even if the word has different cases compared to your input variable, it will still return. In our example, even though there were occurences of capital "The" while we inputted "the" for grep -i, and inputtted "g418" for "G418", the grep -i command returned all instances of the expression despite their differing cases.
+In the code above, ` grep -i "g418" ` returns the lines that include the pattern that was inputted in ` grep -i "g418" ` and prints it to the terminal, in this case being the pattern "G418", and every line in the file that includes "G418" is included there.
 
