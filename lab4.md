@@ -1,6 +1,9 @@
 
 4. Log into ieng6 account 
 `<up> <up> <enter>`
+<img width="563" alt="image" src="https://github.com/TTVTechTaro/cse15l-lab-reports/assets/46509287/b93e39b7-c4dd-48fa-ad21-54b2c344aeeb">
+
+
 
 5. Clone your fork of the repository from your Github account (using the SSH URL)
 ` <up> <up> g <enter>  `
