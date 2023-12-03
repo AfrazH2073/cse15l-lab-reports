@@ -23,7 +23,7 @@ Here I CD into lab7 first in order to access the file to run for the tests by be
 
 
 8. Edit the code file to fix the failing test
-` vim <shift> L <tab> . <tab> 43 j e r 2 <shift> : w q <enter> `
+` vim <shift> L <tab> <tab> 43 j e r 2 <shift> : w q <enter> `
 
 Here I run VIM in order to edit and fix the bug in ListExamples.java, navigating to the bug and fixing index1 to be index2 in the screenshot, and saving it using ` :wq ` .
 
