@@ -15,19 +15,17 @@ Here we are logging into ieng6 account, and I am using up arrow keys to access o
 Here, I am cloning the git repository, in order to access the code in my machine, also known as git cloning it, and I do it by hitting the up arrow key several times to access my earlier clone message I did during the lab, using my terminal history.
 
 6. Run the tests, demonstrating that they fail
-`c d <space> l <tab> <enter> b a s h t <tab> <enter>`
+`c d <space> l <tab> <enter>  b a s h <space> t <tab> <enter>`
 
-<img width="615" alt="image" src="https://github.com/TTVTechTaro/cse15l-lab-reports/assets/46509287/c38c9e9a-e813-4a1a-a7ab-e34d69b68c45">
+Here I CD into lab7 first in order to access the file to run for the tests by being in the same directory, and then I used bash test.sh in order to run the .sh file and run the tests, I used <tab> to autofill the command, and ran it in the terminal.
 
-In here, I used bash test.sh in order to run the .sh file and run the tests, I used <tab> to autofill the command, and ran it in the terminal.
+<img width="619" alt="image" src="https://github.com/TTVTechTaro/cse15l-lab-reports/assets/46509287/504677b6-35b6-4577-b239-df942cce2910">
 
 
 8. Edit the code file to fix the failing test
 ` vim <shift> L <tab> . <tab> 43 j e r 2 <shift> : w q <enter> `
 
 Here I run VIM in order to edit and fix the bug in ListExamples.java, navigating to the bug and fixing index1 to be index2 in the screenshot, and saving it using ` :wq ` .
-
-Here, we run the 
 
 <img width="401" alt="image" src="https://github.com/TTVTechTaro/cse15l-lab-reports/assets/46509287/d3b6e8fe-39c7-410b-b5de-31c2a30281d9">
 
@@ -36,7 +34,9 @@ Here, we run the
 
 9. Run the tests displaying that they succeed.
 
-Here I run the same ` bash test.sh ` test I did before, but this time the tests demonstrate success since I fixed the bug.
+10. b a s h <space> t <tab> <enter> 
+
+Here I run the same ` bash test.sh ` test I did before, but this time the tests demonstrate success since I fixed the bug, and I used <tab> to autofill the rest of the command.
 
   <img width="478" alt="image" src="https://github.com/TTVTechTaro/cse15l-lab-reports/assets/46509287/5b99c269-b267-43cf-80e2-7d8a5c40e798">
 
