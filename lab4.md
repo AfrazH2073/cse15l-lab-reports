@@ -14,6 +14,7 @@
 6. Run the tests, demonstrating that they fail
 `c d <space> l <tab> <enter> b a s h t <tab> <enter>`
 
+<img width="337" alt="image" src="https://github.com/TTVTechTaro/cse15l-lab-reports/assets/46509287/22be1ed0-8216-408a-ade8-78009c30f5d8">
 
 
 
