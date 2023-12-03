@@ -11,7 +11,7 @@ Here we are logging into ieng6 account, and I am using up arrow keys to access o
 
 6. Clone your fork of the repository from your Github account (using the SSH URL)
    
-` <up> <up> <up> <up> <up> <up> <enter>  `
+`<up> <up> <up> <up> <up> <up> <enter>`
 
 <img width="570" alt="image" src="https://github.com/TTVTechTaro/cse15l-lab-reports/assets/46509287/a58d1ad9-06bd-4460-896e-cf0469ccd34d">
 
@@ -26,9 +26,9 @@ Here I CD into lab7 first in order to access the file to run for the tests by be
 
 
 8. Edit the code file to fix the failing test
-` vim L . 43 j e r 2 : w q b a s h t e s t . s h `
+`vim L . 43 j e r 2 : w q b a s h t e s t . s h`
 
-Here I run VIM in order to edit and fix the bug in ListExamples.java, navigating to the bug and fixing index1 to be index2 in the screenshot, and saving it using ` :wq ` .
+Here I run VIM in order to edit and fix the bug in ListExamples.java, navigating to the bug and fixing index1 to be index2 in the screenshot, and saving it using `:wq` .
 
 <img width="401" alt="image" src="https://github.com/TTVTechTaro/cse15l-lab-reports/assets/46509287/d3b6e8fe-39c7-410b-b5de-31c2a30281d9">
 
@@ -37,7 +37,7 @@ Here I run VIM in order to edit and fix the bug in ListExamples.java, navigating
 
 9. Run the tests displaying that they succeed.
 
-` b a s h <space> t <tab> <enter> `
+`b a s h <space> t <tab> <enter>`
 
 Here I run the same ` bash test.sh ` test I did before, but this time the tests demonstrate success since I fixed the bug, and I used <tab> to autofill the rest of the command.
 
@@ -45,9 +45,9 @@ Here I run the same ` bash test.sh ` test I did before, but this time the tests 
 
 
 11. Commit and push the resulting change to your Github account (you can pick any commit message!)
-`<up> <up> <up> <up> <up> g i t <space> c o m m i t <space> - m <space> " c o m m i t " <enter> g i t <space> p u s h <enter> `
+`<up> <up> <up> <up> <up> g i t <space> c o m m i t <space> - m <space> " c o m m i t " <enter> g i t <space> p u s h <enter>`
 
-Here, I use `git commit `to commit and publish changes locally  and giving it a message of "commit" and then using `git push` to push my changes to the repository to update for all users accessing the github.
+Here, I use `git commit`to commit and publish changes locally  and giving it a message of "commit" and then using `git push` to push my changes to the repository to update for all users accessing the github.
 
 <img width="592" alt="image" src="https://github.com/TTVTechTaro/cse15l-lab-reports/assets/46509287/3800ccf3-1883-4c9b-8577-904490201d33">
 
