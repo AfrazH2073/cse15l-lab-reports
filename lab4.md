@@ -6,14 +6,30 @@
 
 
 5. Clone your fork of the repository from your Github account (using the SSH URL)
-` <up> <up> g <enter>  `
+` <up> <up> g <enter>  
+
+<img width="570" alt="image" src="https://github.com/TTVTechTaro/cse15l-lab-reports/assets/46509287/a58d1ad9-06bd-4460-896e-cf0469ccd34d">
+
 
 6. Run the tests, demonstrating that they fail
-`c d <space> l <tab> <enter> b a s h t <enter>`
+`c d <space> l <tab> <enter> b a s h t <tab> <enter>`
 
-7. Edit the code file to fix the failing test
+
+
+
+
+8. Edit the code file to fix the failing test
 ` vim <shift> L <tab> . <tab> 43 j e r 2 <shift> : w q <enter>
 b a s h <space> t e s t . s h <enter> `
 
-9. Commit and push the resulting change to your Github account (you can pick any commit message!)
+<img width="403" alt="image" src="https://github.com/TTVTechTaro/cse15l-lab-reports/assets/46509287/1ea2d4d9-2552-45c5-82ba-8013e4a5ff9a">
+
+
+<img width="625" alt="image" src="https://github.com/TTVTechTaro/cse15l-lab-reports/assets/46509287/ffecd399-9cca-4df8-befe-ba5e9ee21c62">
+
+
+<img width="379" alt="image" src="https://github.com/TTVTechTaro/cse15l-lab-reports/assets/46509287/62e6d00b-b9e0-4c13-9567-d50f221e3b42">
+
+
+10. Commit and push the resulting change to your Github account (you can pick any commit message!)
 `<up> <up> <up> <up> <up> g i t <space> c o m m i t <enter> g i t <space> p u s h <enter> `
