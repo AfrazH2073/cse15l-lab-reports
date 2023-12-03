@@ -3,16 +3,16 @@
 `<up> <up> <enter>`
 <img width="563" alt="image" src="https://github.com/TTVTechTaro/cse15l-lab-reports/assets/46509287/b93e39b7-c4dd-48fa-ad21-54b2c344aeeb">
 
-Here we are logging into ieng6 account, and I am using up arrow keys to access old commands that I typed before.
+Here we are logging into ieng6 account, and I am using up arrow keys to access old commands that I typed before. I accessed the command from my terminal history by repeatedly typing the up arrow key to access my earlier instance of running the ` ssh cs15lfa23eg@ieng6.ucsd.edu `
 
 
 
 5. Clone your fork of the repository from your Github account (using the SSH URL)
-` <up> <up> g <enter>  `
+` <up> <up> <up> <up> <up> <up> <enter>  `
 
 <img width="570" alt="image" src="https://github.com/TTVTechTaro/cse15l-lab-reports/assets/46509287/a58d1ad9-06bd-4460-896e-cf0469ccd34d">
 
-Here, I am cloning the git repository, in order to access the code in my machine, also known as git cloning it.
+Here, I am cloning the git repository, in order to access the code in my machine, also known as git cloning it, and I do it by hitting the up arrow key several times to access my earlier clone message I did during the lab, using my terminal history.
 
 6. Run the tests, demonstrating that they fail
 `c d <space> l <tab> <enter> b a s h t <tab> <enter>`
