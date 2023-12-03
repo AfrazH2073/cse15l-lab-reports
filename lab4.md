@@ -8,7 +8,7 @@ Here we are logging into ieng6 account, and I am using up arrow keys to access o
 
 
 5. Clone your fork of the repository from your Github account (using the SSH URL)
-` <up> <up> g <enter>  
+` <up> <up> g <enter>  `
 
 <img width="570" alt="image" src="https://github.com/TTVTechTaro/cse15l-lab-reports/assets/46509287/a58d1ad9-06bd-4460-896e-cf0469ccd34d">
 
