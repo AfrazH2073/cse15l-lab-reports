@@ -39,7 +39,7 @@ Here I run VIM in order to edit and fix the bug in ListExamples.java, navigating
 
 `b a s h <space> t <tab> <enter>`
 
-Here I run the same ` bash test.sh ` test I did before, but this time the tests demonstrate success since I fixed the bug, and I used <tab> to autofill the rest of the command.
+Here I run the same `bash test.sh` test I did before, but this time the tests demonstrate success since I fixed the bug, and I used <tab> to autofill the rest of the command.
 
   <img width="478" alt="image" src="https://github.com/TTVTechTaro/cse15l-lab-reports/assets/46509287/5b99c269-b267-43cf-80e2-7d8a5c40e798">
 
