@@ -32,6 +32,13 @@ b a s h <space> t e s t . s h <enter> `
 
 <img width="379" alt="image" src="https://github.com/TTVTechTaro/cse15l-lab-reports/assets/46509287/62e6d00b-b9e0-4c13-9567-d50f221e3b42">
 
+9. Run the tests displaying that they succeed.
 
-10. Commit and push the resulting change to your Github account (you can pick any commit message!)
+  <img width="478" alt="image" src="https://github.com/TTVTechTaro/cse15l-lab-reports/assets/46509287/5b99c269-b267-43cf-80e2-7d8a5c40e798">
+
+
+11. Commit and push the resulting change to your Github account (you can pick any commit message!)
 `<up> <up> <up> <up> <up> g i t <space> c o m m i t <enter> g i t <space> p u s h <enter> `
+
+<img width="478" alt="image" src="https://github.com/TTVTechTaro/cse15l-lab-reports/assets/46509287/be63f17f-49fa-4fd5-a7ae-160e41840d28">
+
