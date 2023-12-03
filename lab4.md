@@ -24,7 +24,8 @@
 ` vim <shift> L <tab> . <tab> 43 j e r 2 <shift> : w q <enter>
 b a s h <space> t e s t . s h <enter> `
 
-<img width="403" alt="image" src="https://github.com/TTVTechTaro/cse15l-lab-reports/assets/46509287/1ea2d4d9-2552-45c5-82ba-8013e4a5ff9a">
+<img width="401" alt="image" src="https://github.com/TTVTechTaro/cse15l-lab-reports/assets/46509287/d3b6e8fe-39c7-410b-b5de-31c2a30281d9">
+
 
 
 <img width="625" alt="image" src="https://github.com/TTVTechTaro/cse15l-lab-reports/assets/46509287/ffecd399-9cca-4df8-befe-ba5e9ee21c62">
