@@ -34,7 +34,7 @@ Here I run VIM in order to edit and fix the bug in ListExamples.java, navigating
 
 9. Run the tests displaying that they succeed.
 
-10. b a s h <space> t <tab> <enter> 
+` b a s h <space> t <tab> <enter> `
 
 Here I run the same ` bash test.sh ` test I did before, but this time the tests demonstrate success since I fixed the bug, and I used <tab> to autofill the rest of the command.
 
