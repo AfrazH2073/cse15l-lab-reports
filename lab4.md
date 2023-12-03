@@ -40,6 +40,7 @@ b a s h <space> t e s t . s h <enter> `
 11. Commit and push the resulting change to your Github account (you can pick any commit message!)
 `<up> <up> <up> <up> <up> g i t <space> c o m m i t <enter> g i t <space> p u s h <enter> `
 
-<img width="478" alt="image" src="https://github.com/TTVTechTaro/cse15l-lab-reports/assets/46509287/ce61690f-9b34-4f0d-9929-13c9191156c0">
+<img width="592" alt="image" src="https://github.com/TTVTechTaro/cse15l-lab-reports/assets/46509287/3800ccf3-1883-4c9b-8577-904490201d33">
+
 
 
