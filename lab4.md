@@ -27,10 +27,6 @@ b a s h <space> t e s t . s h <enter> `
 <img width="401" alt="image" src="https://github.com/TTVTechTaro/cse15l-lab-reports/assets/46509287/d3b6e8fe-39c7-410b-b5de-31c2a30281d9">
 
 
-
-<img width="625" alt="image" src="https://github.com/TTVTechTaro/cse15l-lab-reports/assets/46509287/ffecd399-9cca-4df8-befe-ba5e9ee21c62">
-
-
 <img width="379" alt="image" src="https://github.com/TTVTechTaro/cse15l-lab-reports/assets/46509287/62e6d00b-b9e0-4c13-9567-d50f221e3b42">
 
 9. Run the tests displaying that they succeed.
