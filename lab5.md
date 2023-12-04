@@ -5,20 +5,20 @@ Design a debugging scenario, and write your report as a conversation on EdStem. 
 
 Student "Hi Afraz, I hope you're having a good day so far. I'm trying to get my code to work, my student submission file is not working and I have tried debugging it, and don't know what to do.  The screenshot of the failed tests is shown below, I'm thinking it's giving an out of bounds error because there is a missing curly brace so even though the index is in the same area under the if statement, the if statement isn't registering it. Sincerely, Akhil." 
 
-`// Takes two sorted list of strings (so "a" appears before "b" and so on),
+```
+// Takes two sorted list of strings (so "a" appears before "b" and so on),
   // and return a new list that has all the strings in both list in sorted order.
   static List<String> merge(List<String> list1, List<String> list2) {
 import java.util.ArrayList;
-import java.util.List;
-
+import java.util.List; 
 interface StringChecker { boolean checkString(String s); }
 
-class ListExamples {
+class ListExamples { 
 
   // Returns a new list that has all the elements of the input list for which
   // the StringChecker returns true, and not the elements that return false, in
-  // the same order they appeared in the input list;
-  `import java.util.ArrayList;
+  // the same order they appeared in the input list; 
+  import java.util.ArrayList;
 import java.util.List;
 
 interface StringChecker { boolean checkString(String s); }
@@ -66,7 +66,9 @@ class ListExamples {
   }
 
 
-}`
+}
+```
+
 
 (insert failing test sc)
 
@@ -104,7 +106,8 @@ java -cp .:lib/hamcrest-core-1.3.jar:lib/junit-4.13.2.jar org.junit.runner.JUnit
 
 `ListExamples.java`
 
-`import java.util.ArrayList;
+```
+import java.util.ArrayList;
 import java.util.List;
 
 interface StringChecker { boolean checkString(String s); }
@@ -153,7 +156,8 @@ class ListExamples {
   }
 
 
-}`
+}
+```
 
 (Screenshot showing test success with fixing the bug, showing OK)
 
