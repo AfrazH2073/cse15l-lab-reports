@@ -73,7 +73,7 @@ Afraz TA - "Hey Akhil, Run a print statement that prints list1 and result after 
 Student - "Oh, let me try that - I will look through the if statement and see if anything is off. Sincerely, Akhil"
 
 
-The bug is that the `index1 += 1` is happening before the `result.add(list1.get(index1));` 
+The bug is that the `index1 += 1` is happening before the `result.add(list1.get(index1));` resulting in the first value being skipped in List 1 when conducting the merge.
 
 ![image](https://github.com/TTVTechTaro/cse15l-lab-reports/assets/46509287/9f733639-d5bf-4f8c-8112-8c7dcd5e6b90)
 
@@ -91,7 +91,7 @@ File and directroy structure needed: You need to have `ListExamples.java` and `t
 
 Content of files before fixing bug:
 
-`test.sh`
+`test.sh` contains the following code below to run tests on the java files - ListExamplesTests.java file specifically in the directory.
 
 `javac -cp .:lib/hamcrest-core-1.3.jar:lib/junit-4.13.2.jar *.java
 java -cp .:lib/hamcrest-core-1.3.jar:lib/junit-4.13.2.jar org.junit.runner.JUnitCore ListExamplesTests`
@@ -218,6 +218,8 @@ class ListExamples {
 
 }
 ```
+
+`test.sh` was unchanged while fixing the bug.
 
 To fix the bug you need to move the index1 += 1 and move it to be after the `result.add(list1.get(index1)`, since that results in the first value being skipped in `list1` and not being properly merged in the `result` arraylist.
 
