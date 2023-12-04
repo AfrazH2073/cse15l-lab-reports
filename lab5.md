@@ -5,8 +5,7 @@ Design a debugging scenario, and write your report as a conversation on EdStem. 
 
 Student "Hi Afraz, I hope you're having a good day so far. I'm trying to get my code to work, my student submission file is not working and I have tried debugging it, and don't know what to do.  The screenshot of the failed tests is shown below, I'm thinking it's giving an out of bounds error because there is a missing curly brace so even though the index is in the same area under the if statement, the if statement isn't registering it. Sincerely, Akhil." 
 
-`
-  // Takes two sorted list of strings (so "a" appears before "b" and so on),
+`// Takes two sorted list of strings (so "a" appears before "b" and so on),
   // and return a new list that has all the strings in both list in sorted order.
   static List<String> merge(List<String> list1, List<String> list2) {
 import java.util.ArrayList;
@@ -67,8 +66,7 @@ class ListExamples {
   }
 
 
-}
-`
+}`
 
 (insert failing test sc)
 
@@ -160,5 +158,7 @@ class ListExamples {
 (Screenshot showing test success with fixing the bug, showing OK)
 
 To fix the bug you need to move the index1 += 1 and move it to be after the result.add(list1.get(index1), since that results in the first value being skipped in list1 and not being properly merged in the Result arraylist.
+
 Part 2 – Reflection
-I learned about grep and how you can use it to search for the lines that contain a specific string in a file, and how you can use that command even furhter in different ways like -i to instead return all the lines in a file that do NOT contain the string. In addition, there are other types of commands to navigate file structure like ls to list out things in a directory, cd to switch to different directories, and cat to concatenate and print out files, ways to edit files via terminal with vim, methods to perform git commands via the terminal, and more. All in all, I've found very robust and quick ways to do many tasks on terminal without needing to open up a single website, so much can be done just by terminal, as we showed in Skill Demo 4, doing an entire skill demo via terminal.
+
+I learned about `grep` and how you can use it to search for the lines that contain a specific string in a file, and how you can use that command even furhter in different ways like -i to instead return all the lines in a file that do NOT contain the string. In addition, there are other types of commands to navigate file structure like `ls` to list out things in a directory, `cd` to switch to different directories, and `cat` to concatenate and print out files, ways to edit files via terminal with vim, methods to perform git commands via the terminal, and more. All in all, I've found very robust and quick ways to do many tasks on terminal without needing to open up a single website, so much can be done just by terminal, as we showed in Skill Demo 4, doing an entire skill demo via terminal.
